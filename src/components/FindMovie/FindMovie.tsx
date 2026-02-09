@@ -15,8 +15,8 @@ interface Props {
 export const FindMovie: React.FC<Props> = ({ onMovieAdd }) => {
   const [movie, setMovie] = useState<Movie>();
   const [title, setTitle] = useState<string>('');
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [hasError, setHasError] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   const findFocusRef = useRef<HTMLInputElement>(null);
 
